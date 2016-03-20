@@ -14,7 +14,8 @@
     <h2 id = "loc"></h2>
     
 </body>
-    <script type="text/javascript">
+    <script>
+        var x = document.getElementById("loc");
         function getlocation() {
             //code
             if (navigator.geolocation) {
@@ -30,5 +31,4 @@
             x.innerHTML = "Latitude" + position.coords.latitude + "<br> Longitude : " + position.coords.longitude;
         }
     </script>
-
 </html>
