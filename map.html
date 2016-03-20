@@ -21,6 +21,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
+<<<<<<< HEAD
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     latlon = new google.maps.LatLng(lat, lon)
@@ -37,6 +38,13 @@ function showPosition(position) {
     
     var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
     var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+=======
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&sensor=true";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+>>>>>>> origin/master
 }
 
 function showError(error) {
