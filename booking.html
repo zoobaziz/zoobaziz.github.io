@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Book My Movie </title>
+    <style type="text/css">
+        p.citysel { font-family: serif; font-size: large; font-style: italic; color: #b3b3b3 }
+        h1 {font-family: cursive; text-shadow: 2px 2px #b3b3b3; }
+        body {background-image: url('img.jpg')} 
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 align=center> Online Movie Booking </h1>
+    </div>
+    
+    <div>
+        <p class="citysel">
+            Select the city you are in:
+            <select name = "city" id="city">
+                <option value="none" selected>--NONE--</option>
+                <option value="ubl">HUBLI</option>
+                <option value="dharwad">DHARWAD</option>
+                <option value="blore">BANGALORE</option>
+            </select>
+        </p>
+        <button type="button" onclick=getMovies()>Submit</button>   
+    </div>
+    
+    <div>
+        <p id = "movies"></p>
+    </div>
+    
+</body>
+
+    <script>
+        
+        var c = document.getElementById('city');
+        function getMovies() {
+            //code
+            alert("The city u have selected is " + c);
+        }
+    </script>
+
+</html>
