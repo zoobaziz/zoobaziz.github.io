@@ -6,7 +6,7 @@
     <style type="text/css">
         p.citysel { font-family: serif; font-size: large; font-style: italic; color: #b3b3b3 }
         h1 {font-family: cursive; text-shadow: 2px 2px #b3b3b3; }
-        body {background-image: url('img.jpg')} 
+        body {background-image: url('ModernBlue.jpg')} 
     </style>
 </head>
 
@@ -18,15 +18,11 @@
     
     <div>
         <p class="citysel">
-            Select the city you are in:
-            <select name = "city" id="city">
-                <option value="none" selected>--NONE--</option>
-                <option value="ubl">HUBLI</option>
-                <option value="dharwad">DHARWAD</option>
-                <option value="blore">BANGALORE</option>
-            </select>
+            Enter the city you are in:
+          
+            <input type="text" id = city>
         </p>
-        <button type="button" onclick=getMovies()>Submit</button>   
+        <button type="button" onclick=getCity()>Submit</button>   
     </div>
     
     <div>
@@ -36,11 +32,12 @@
 </body>
 
     <script>
-        
-        var c = document.getElementById('city');
-        function getMovies() {
+        var city = document.getElementById("city").value;
+        function getCity() {
             //code
-            alert("The city u have selected is " + c);
+            
+        alert("you're in this city ----> "+city);
+        
         }
     </script>
 
