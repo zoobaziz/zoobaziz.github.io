@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Book My Movie </title>
+    <style type="text/css">
+        p.citysel { font-family: serif; font-size: large; font-style: italic; color: #b3b3b3 }
+        h1 {font-family: cursive; text-shadow: 2px 2px #b3b3b3; }
+        body {background-image: url('ModernBlue.jpg')} 
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 align=center> Online Movie Booking </h1>
+    </div>
+    
+    <div>
+        <p class="citysel">
+            Enter the city you are in:
+        </p>
+        <form>
+            <input type="text" id="city"/>
+            <button type="button" onclick=getCity()>Submit</button>    
+        </form>
+            
+    </div>
+    
+    <div>
+        <p id = "movies"></p>
+    </div>
+    
+</body>
+
+    <script type="text/javascript">
+        
+        function getCity() {
+            var c = document.getElementById("city").value;
+            alert("you're in this city ----> " + c );
+        }
+    </script>
+
+</html>
