@@ -19,10 +19,12 @@
     <div>
         <p class="citysel">
             Enter the city you are in:
-          
-            <input type="text" id = city>
         </p>
-        <button type="button" onclick=getCity()>Submit</button>   
+        <form>
+            <input type="text" id="city"/>
+            <button type="button" onclick=getCity()>Submit</button>    
+        </form>
+            
     </div>
     
     <div>
@@ -31,13 +33,11 @@
     
 </body>
 
-    <script>
-        var city = document.getElementById("city").value;
-        function getCity() {
-            //code
-            
-        alert("you're in this city ----> "+city);
+    <script type="text/javascript">
         
+        function getCity() {
+            var c = document.getElementById("city").value;
+            alert("you're in this city ----> " + c );
         }
     </script>
 
