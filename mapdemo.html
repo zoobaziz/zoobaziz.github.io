@@ -11,8 +11,12 @@
             .buttn{ padding: 10px 10px 10px 10px;
                           position: absolute;
                           background-color: lightblue;
-                        }
-                                
+            }
+            .map
+            {
+                text-align: center;
+                padding: 10px 10px 10px 10px
+            }
         </style>
         <title>MINI LOCATOR</title>
     </head>
@@ -23,7 +27,9 @@
 <div class="wrapper">
 <button class="buttn" onclick="getLocation()">Try It</button>
 </div>
-<div id="mapholder">
+<div class="map">
+<p id="mapholder">
+</p>
 </div>
 
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
