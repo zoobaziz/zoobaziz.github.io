@@ -4,12 +4,12 @@
         <style type="text/css">
             body { background-color: darkgray; }
             p.id { font-family: cursive}
-            button.buttn{ padding: 10px 10px 10px 10px;
-                          position: relative;
-                          left: 650px;
-                          right: 650px;
-                          width: 70px;
-                          height: 50px;
+            .wrapper
+            {
+                text-align: center
+            }
+            .buttn{ padding: 10px 10px 10px 10px;
+                          position: absolute;
                           background-color: lightblue;
                         }
         </style>
@@ -19,9 +19,9 @@
 
 <p id="demo"><h1 align=center >Click the button to get your position.</h1></p>
 
-
+<div class="wrapper">
 <button class="buttn" onclick="getLocation()">Try It</button>
-
+</div>
 <p align=center>
 <div id="mapholder"></div>
 </p>
