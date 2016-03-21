@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style type="text/css">
+            p.id { font-family: cursive}
+            
+        </style>
+        <title>MINI LOCATOR</title>
+    </head>
 <body>
 
-<p id="demo">Click the button to get your position.</p>
+<p id="demo"><h1 align=center >Click the button to get your position.</h1></p>
 
 <button onclick="getLocation()">Try It</button>
 
+<p align=center>
 <div id="mapholder"></div>
-
+</p>
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 <script>
+    
+//this html page makes use of GEOLOCATION API which is used to get the geographical position of user
 var x = document.getElementById("demo");
+
 function getLocation() {
     if (navigator.geolocation) {
+        
+        //getCurrentPosition() method is used to get the user's position
+        
         navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        
+    }
+    else { 
+        alert("Geolocation is not supported by this browser.");
     }
 }
 
+//to display the result we need to access the map service like GOOGLE MAPS
 function showPosition(position) {
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
+    
+    lat = position.coords.latitude; // coords.latitude returns latitude as decimal number
+    lon = position.coords.longitude; // coords.longitude returns longitude as decimal number
     latlon = new google.maps.LatLng(lat, lon)
     mapholder = document.getElementById('mapholder')
-    mapholder.style.height = '250px';
+    mapholder.style.height = '500px';
     mapholder.style.width = '500px';
 
     var myOptions = {
@@ -42,16 +60,16 @@ function showPosition(position) {
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
+            alert("User denied the request for Geolocation.");
             break;
         case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
+            alert("Location information is unavailable.");
             break;
         case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
+            alert("The request to get user location timed out.");
             break;
         case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
+            alert("An unknown error occurred.");
             break;
     }
 }
