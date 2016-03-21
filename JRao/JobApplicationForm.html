@@ -1,0 +1,544 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Job Application</title>
+</head>
+<style type="text/css">
+    div{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        
+        border-top: 1px blue solid;
+        border-bottom: 1px blue solid;
+        border-left: 1px blue solid;
+        border-right: 1px blue solid;
+        margin: 0 auto;
+        height: 1000px;
+        width: 1300px;
+    }
+    #topbar{
+        background-color: #3174BA;
+        margin-top:40px;
+        height: 50px;
+        color: white;
+        font-size: 1.5em;
+        padding-left: 5px;
+        padding-top: 15px;
+        font-family: Arial;
+    }
+    .clearcontent{
+        clear: both;
+    }
+    #instruction{
+        color:#8092AC;
+        padding-top: 20px;
+        font-weight: bold;
+        font-family:Arial;
+    }
+    #middlecontainer{
+        margin: 0 auto;
+        padding-left: 35px;
+        padding-right: 35px;
+        
+    }
+    #designation{
+         background-color: #3174BA;
+         color: white;
+         font-family: Arial;
+         font-weight: bold;
+         padding-top: 15px;
+         padding-left: 10px;
+         margin-top:8px;
+         height: 35px;
+    }
+    #designationdata{
+        color: black;
+        padding-top:15px;
+        padding-left:10px;
+        float:left;
+        font-family: Arial;
+        font-weight:bold;
+    }
+    .firstpart{
+        float:left;
+        
+    }
+    .secondpart{
+        float:left;
+        padding-top:10px;
+    }
+    p{
+        padding:0;
+        margin:0;
+    }
+    .aboutyou{
+        background-color: #3174BA;
+        height:30px;
+        margin-top: 8px;
+        color:white;
+        font-family: Arial;
+        font-weight:bold;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    #firstAD{
+        padding-left:5px;
+        padding-top:15px;
+        margin-top:5px;
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:35px;
+        float:left;
+        border: 1px black solid;
+    }
+    #secondAD{
+        padding-left:5px;
+        padding-top:15px;
+        margin-top:5px;
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:35px;
+        float:left;
+        border: 1px black solid;
+    }
+    #thirdAD{
+        padding-left:5px;
+        padding-top:15px;
+        margin-top:5px;
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:35px;
+        float:left;
+        border: 1px black solid;
+   
+    }
+     #fourthAD{
+        padding-left:5px;
+        padding-top:15px;
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:105px;
+        float:left;
+        border: 1px black solid;
+    }
+      #fifthAD{
+        padding-left:5px;
+        padding-top:15px;
+        
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:105px;
+        float:left;
+        border: 1px black solid;
+    }
+      #sixthAD{
+        padding-left:5px;
+        padding-top:15px;
+        
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:105px;
+        float:left;
+        border: 1px black solid;
+    }
+     #seventhAD{
+        padding-left:5px;
+        padding-top:15px;
+        
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:140px;
+        float:left;
+        border: 1px black solid;
+    }
+    #eightAD{
+        padding-left:5px;
+        padding-top:15px;
+        
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:140px;
+        float:left;
+        border: 1px black solid;
+    }
+    #ninthAD{
+        padding-left:5px;
+        padding-top:15px;
+        
+        font-family:Arial;
+        font-weight:bold;
+        width: 370px;
+        height:140px;
+        float:left;
+        border: 1px black solid;
+    }
+    #Education{
+        height: 200px;
+        width: 1130px;
+        border: 1px black solid;
+        margin-top: 5px;
+        
+        font-family:Arial;
+        font-weight:bold;
+        float:left;
+    }
+    #firstED{
+        padding-left:30px;
+        padding-top:15px;
+        padding-right:130px;
+        padding-bottom:10px;
+        float:left;
+        border-bottom:1px solid black;
+    }
+    #secondED{
+         padding-left:30px;
+        padding-top:15px;
+        padding-right:130px;
+        padding-bottom:10px;
+        float:left;
+        border-bottom:1px solid black;
+    }
+    #thirdED{
+        padding-left:3px;
+        padding-top:15px;
+        padding-right:145px;
+        padding-bottom:10px;
+        float:left;
+        border-bottom:1px solid black;
+    }
+    #fourthED{
+        padding-left:30px;
+        padding-top:15px;
+        padding-right:130px;
+        float:left;
+        padding-bottom: 47px;
+        border-right: 1px black solid;
+    }
+    #fifthED{
+        padding-left:30px;
+        padding-top:15px;
+        padding-right:130px;
+        float:left;
+    }
+    .decide{
+        padding-left:928px;
+        padding-top: 10px;
+        
+    }
+    #clr{
+        width:100px;
+        height:40px;
+        background-color:  #3174BA;
+        font-family:Arial;
+        font-weight:bold;
+        
+    }
+    #sub{
+        width:100px;
+        height:40px;
+        font-family:Arial;
+        font-weight:bold;
+        
+        background-color: #3174BA;
+    }
+    #posp{
+        color:red;
+    }
+    .h2{
+        font-family: Arial;
+    }
+</style>
+<body>
+    <form id="myForm" method="post"  action="" >
+    <div id="container">
+        
+        <div id="topbar">
+            APPLICATION FOR EMPLOYEMENT
+        </div>
+        <div class="clearcontent"></div>
+        <div id="middlecontainer">
+                <div id="instruction">
+                    This application must be fully completed to be considered. Please complete each box
+                </div>
+                
+                <div class="clearcontent"></div>
+                
+                <div id="designation">
+                    Postion(s) that you are applying for
+                </div>
+                
+                <div class="clearcontent"></div>
+                    <div id="designationdata">
+                            
+                             <div class="firstpart">
+                             <span id="trial" style="padding-right:3px;">Postion(s)/Job Title</span> <input style="color:black" id="pos" type="text" size="60" />
+                            
+                             <span style="padding-left:100px;">Part Time<input id="hr" type="checkbox"/></span>
+                             Full Time<input id="hr2" type="checkbox"/>
+                             Temporary<input id="hr3" type="checkbox"/>
+                                
+                             </div>                   
+                                
+                             <div class="secondpart">
+                                
+                             <span style="padding-right:5px;">Job Number(if any)</span> <input type="number" />
+                             <span style="padding-left:8px;">Rate of Pay expected <input id="rate" type="number" style="width:99px;"/></span>
+                             <span style="padding-left:99px;">Date you can start work <input id="dat" type="date" /></span>
+                             </div>
+                             
+                    </div>        
+                    <div class="clearcontent"></div>       
+                    
+                    <div class="aboutyou">
+                        About You
+                    </div>    
+                    <div class="AboutData">
+                        <div id="firstAD">
+                            Last Name: <input id="lastname" type="text"/>
+                        </div>
+                        
+                        <div id="secondAD">
+                            First Name: <input id="firstname" type="text"/>
+                        </div>
+                        <div id="thirdAD">
+                            Middle Name: <input id="middlename" type="text"/>
+                        </div>
+                        <div id="fourthAD">
+                          SSN: <span style="padding-left:45px;"></span><input id="ssn" type="number"/>
+                          <br/> <br/>
+                          Email: <span style="padding-left:35px;"></span><input id="email" type="email"/>
+                        </div>
+                        <div id="fifthAD">
+                           House No.:<span style="padding-left:5px;"> </span></spam> <input id="hno" type="number"/>
+                           <br/><br/>
+                           City : <span style="padding-left:50px";></span><input id="city" type="text"/>
+                           <br/><br/>
+                           State: <span style="padding-left:45px";></span><input id="state" type="text"/>
+                        </div>
+                        <div id="sixthAD">
+                            Telephone Number: <input id="tno" type="number"/>
+                            <br/><br/>
+                            Alternate Number: <input id="ano" type="number"/>
+                        </div>
+                        <div id="seventhAD">
+                            Are you 18 years of age?
+                            <br/><br/><br/><br/>
+                            Yes<sup><input id="yes18" type="checkbox"/></sup>
+                            <span style="padding-left:35px">
+                            </span>
+                            No<sup><input id="no18" type="checkbox"</sup>
+                            <br/><br/>
+                            <span style="font-size:0.8em;">If under 18 the applicant is required to submit a birth certificate</span>
+                        </div>
+                        <div id="eightAD">
+                            Will you be able to show evidence of identity and work authorization within 3 days of hire?
+                            <br/><br/><br/>
+                            Yes<sup><input id="yesa" type="checkbox"/></sup>
+                            <span style="padding-left:35px">
+                            </span>
+                            No<sup><input id="noa" type="checkbox"</sup>
+                        </div>
+                        <div id="ninthAD">
+                            Will you now or in future require work visa sponsorship?
+                            <br/><br/><br/>
+                            Yes<sup><input id="yesv" type="checkbox"/></sup>
+                            <span style="padding-left:35px">
+                            </span>
+                            No<sup><input id="nov" type="checkbox"</sup>
+                        </div>
+                    </div>
+                    <div class="clearcontent"></div>
+                     <div class="aboutyou">
+                        Education
+                    </div>
+                     <div id="Education">
+                        <div id="firstED">
+                            Elementary Grade Level
+                            <br/><br/>
+                            8 <input type="checkbox"/> or less
+                        </div>
+                        
+                        <div id="secondED">
+                            High School(Grade Level)
+                            <br/><br/>
+                            9 <input id="9" type="checkbox"/>10 <input id="10" type="checkbox"/>11 <input id="11"type="checkbox"/>12 <input id="12" type="checkbox"/>
+                        </div>
+                        
+                        <div id="thirdED">
+                            College/University/Technical(Years)
+                            <br/><br/>
+                            1 <input id="1" type="checkbox"/>2 <input id="2" type="checkbox"/>3 <input id="3" type="checkbox"/>4 <input id="4" type="checkbox"/>
+                        </div>
+                        
+                        <div id="fourthED">
+                            Are you currently a student?
+                            <br/><br/>
+                            Yes <input id="yess" type="checkbox"/> <span style="padding-left:70px;"></span>No<input id="nos" type="checkbox"/>
+                        </div>
+                        
+                        <div id="fifthED">
+                            Name of the College/University
+                            <br/>
+                            <textarea id="college" rows=4 cols=50></textarea>
+                        </div>
+                     </div>    
+                    <div class="clearcontent"></div>
+                     <div class="decide">
+                        <button id="clr"> Clear</button>
+                        <button id="sub" onclick="return validate()" > Submit </button>
+                        
+                     </div>
+                
+                </div>
+    
+        
+    </div>
+    </form>
+    <script type="text/javascript">
+        var userdata="";
+       document.getElementById("clr").onclick=function clrall(){
+            document.getElementById("myForm").reset();
+        }
+        function validate(){
+            var msg="";
+            
+            if (document.getElementById("pos").value=="") {
+                //code
+                msg="Please Fill The Position";
+               
+               
+            }
+            
+            if (document.getElementById("hr").checked && document.getElementById("hr2").checked &&
+                document.getElementById("hr3").checked || document.getElementById("hr").checked &&
+                document.getElementById("hr2").checked || document.getElementById("hr2").checked &&
+                document.getElementById("hr3").checked || document.getElementById("hr").checked &&
+                document.getElementById("hr3").checked)  {
+                //code
+                msg=msg+"\nPlease select only one option";
+                 
+                
+            }
+           
+            if (document.getElementById("rate").value=="") {
+                //code
+                msg=msg+"\nPlease select a Valid Rate";
+                
+            }
+             
+            if (document.getElementById("lastname").value=="") {
+                //code
+                msg=msg+"\nPlease Fill The Last Name";
+                
+            }
+           
+            if (document.getElementById("firstname").value=="") {
+                //code
+                msg=msg+"\nPlease Fill The First Name";
+               
+            }
+           
+            if (document.getElementById("middlename").value=="") {
+                //code
+                msg=msg+"\nPlease Fill The Middle Name";
+               
+            }
+            
+            if (document.getElementById("ssn").value=="") {
+                //code
+                msg=msg+"\nPlease Fill The SSN";
+                
+            }
+            
+            if (document.getElementById("city").value=="") {
+                //code
+                msg=msg+"\nPlease Fill The City";
+                
+            }
+            
+            if (document.getElementById("hno").value=="") {
+                //code
+                msg=msg+"\nPlease Fill The House No";
+               
+            }
+            
+            if (document.getElementById("tno").value=="") {
+                //code
+                msg=msg+"\nPlease Enter Valid Telephone Number";
+                
+            }
+            
+            if (document.getElementById("yes18").checked && document.getElementById("no18").checked ||
+                !document.getElementById("yes18").checked && !document.getElementById("no18").checked) {
+                //code
+                msg=msg+"\nPlease Select Yes or No (in age) ";
+                
+            }
+            
+            if (document.getElementById("yesa").checked && document.getElementById("noa").checked ||
+                !document.getElementById("yesa").checked && !document.getElementById("noa").checked
+                ) {
+                //code
+                msg=msg+"\nPlease Select Yes or No (In Authentication)";
+                
+            }
+           
+            if (document.getElementById("yesv").checked && document.getElementById("nov").checked ||
+                !document.getElementById("yesv").checked && !document.getElementById("nov").checked){
+                //code
+                msg=msg+"\nPlease Select Yes or No";
+                
+            }
+           
+            if (document.getElementById("yess").checked && document.getElementById("nos").checked ||
+                !document.getElementById("yess").checked && !document.getElementById("nos").checked) {
+                //code
+                msg=msg+"\nPlease Select Yes or No(in VISA Sponsorship)";
+                
+            }
+          
+            if (document.getElementById("yess").checked && document.getElementById("college").value=="") {
+                //code
+                msg=msg+"\nPlease Enter your College Name";
+               
+            }
+           
+            if (document.getElementById("1").checked && document.getElementById("2") ||
+                document.getElementById("2").checked && document.getElementById("3") ||
+                document.getElementById("3").checked && document.getElementById("4") ||
+                document.getElementById("4").checked && document.getElementById("1") ||
+                document.getElementById("1").checked && document.getElementById("2").checked && document.getElementById("3") ||
+                document.getElementById("2").checked && document.getElementById("3").checked && document.getElementById("4") ||
+                document.getElementById("3").checked && document.getElementById("4").checked && document.getElementById("1") ||
+                document.getElementById("1").checked && document.getElementById("2").checked && document.getElementById("3") &&
+                document.getElementById("4")){
+                //code
+                msg=msg+"\nPlease Select Any one option in The Years of Experience";
+                
+            }
+            
+            if (msg!="") {
+                //code
+                alert(msg);
+                return false;
+            }
+            else{
+                alert("Form Submitted Successfully!");
+                return true;
+            }
+            
+        }
+    </script>
+</body>
+</html>
