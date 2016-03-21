@@ -16,6 +16,11 @@
             .map{
                 text-align: center
             }
+            
+            .mp{
+                position: absolute;
+                
+            }
         </style>
         <title>MINI LOCATOR</title>
     </head>
@@ -26,7 +31,10 @@
 <div class="wrapper">
 <button class="buttn" onclick="getLocation()">Try It</button>
 </div>
-<div class="map" id="mapholder"></div>
+<div class="map">
+    <div class="mp" id="mapholder">
+    </div>
+</div>
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 <script>
