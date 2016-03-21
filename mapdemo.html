@@ -15,7 +15,8 @@
             .map
             {
                 text-align: center;
-                padding: 10px 10px 10px 10px
+                padding: 10px 10px 10px 10px;
+                position: absolute;
             }
         </style>
         <title>MINI LOCATOR</title>
@@ -59,7 +60,7 @@ function showPosition(position) {
     lon = position.coords.longitude; // coords.longitude returns longitude as decimal number
     latlon = new google.maps.LatLng(lat, lon)
     mapholder = document.getElementById('mapholder')
-    mapholder.style.verticalAlign = '300px';
+   // mapholder.style.verticalAlign = '300px';
     //mapholder.style
     mapholder.style.height = '500px';
     mapholder.style.width = '500px';
