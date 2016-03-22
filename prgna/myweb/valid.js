@@ -1,7 +1,7 @@
 function valid()
 { 
 	
-   if ((Reservation.Journey type[0].checked == false) && (Reservation.Journey type[1].checked == false))
+   if((Reservation.Journey.type[0].checked == false) && (Reservation.Journey.type[1].checked == false))
    {
    alert ("Please choose your Journey type: One way or  Return");
    document.Registration.Journey.focus();
