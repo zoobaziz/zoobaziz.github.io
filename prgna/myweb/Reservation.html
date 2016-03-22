@@ -1,0 +1,209 @@
+<html>
+<head>
+<script type="text/javascript" src="valid.js">
+</script>
+
+<style>
+            body
+				{
+					background-image: url("airplane.png");
+					background-attachment: fixed;
+					background-size: 100% 100%;
+					background-color:blue;
+		            font-size: 20px;
+                    font-family:arial,geneva,arial black;
+                    font-weight:normal;
+       
+				}
+			
+
+</style>
+
+</head>
+ <body>
+ 
+<form action="#" name="Reservation" onsubmit="return(valid());" method="Post">
+
+<table cellpadding="3" width="40%"  align="center" cellspacing="3">
+
+<tr>
+<td colspan=4>
+<center><font size=5  color="brown"><b> Reservation</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>Journey type:</td>
+<td><input type="radio" name="text" value="One way" size="20">One way
+<input type="radio" name="text" value="Return" size="20">Return</td>
+</tr>
+
+ 
+ <tr>
+<td>From:</td>
+<td><select name="From">
+<option value="-1" selected>-----Select a location-----</option>
+<option value="Indira Gandhi International Airport
+New Delhi,
+Delhi">Indira Gandhi International Airport,
+New Delhi,
+Delhi</option>
+<option value="Sardar Vallabhbhai Patel International Airport
+Ahmedabad,
+Gujarat">Sardar Vallabhbhai Patel International Airport,
+Ahmedabad,
+Gujarat</option>
+<option value="Rajiv Gandhi International Airport Hyderabad Telangana">Rajiv Gandhi International Airport, Hyderabad, Telangana</option>
+<option value="Kempegowda International Airport
+Bengaluru,
+Karnataka">Kempegowda International Airport,
+Bengaluru,
+Karnataka</option>
+<option value="Calicut International Airport
+Kozhikode,
+Kerala">Calicut International Airport,
+Kozhikode,
+Kerala</option>
+<option value="Chhatrapati Shivaji International Airport
+Mumbai,
+Maharashtra">Chhatrapati Shivaji International Airport,
+Mumbai,
+Maharashtra</option>
+<option value="Netaji Subhash Chandra Bose International Airport
+Kolkata,
+West Bengal">Netaji Subhash Chandra Bose International Airport,
+Kolkata,
+West Bengal</option>
+<option value="Dubai International Airport	Garhoud, Dubai">Dubai International Airport	Garhoud, Dubai</option>
+<option value="John F. Kennedy International Airport Queens, New York City, New York">John F. Kennedy International Airport	Queens, New York City, New York</option>
+<option value=" London Heathrow Airport	Hillingdon, London"> London Heathrow Airport Hillingdon, London</option>
+</select></td>
+</tr>
+
+<tr>
+<td>To:</td>
+<td><select name="To">
+<option value="-1" selected>-----Select a location-----</option>
+<option value="Indira Gandhi International Airport
+New Delhi,
+Delhi">Indira Gandhi International Airport,
+New Delhi,
+Delhi</option>
+<option value="Sardar Vallabhbhai Patel International Airport
+Ahmedabad,
+Gujarat">Sardar Vallabhbhai Patel International Airport,
+Ahmedabad,
+Gujarat</option>
+<option value="Rajiv Gandhi International Airport Hyderabad	Telangana">Rajiv Gandhi International Airport, Hyderabad, Telangana</option>
+<option value="Kempegowda International Airport
+Bengaluru,
+Karnataka">Kempegowda International Airport,
+Bengaluru,
+Karnataka</option>
+<option value="Calicut International Airport
+Kozhikode,
+Kerala">Calicut International Airport,
+Kozhikode,
+Kerala</option>
+<option value="Chhatrapati Shivaji International Airport
+Mumbai,
+Maharashtra">Chhatrapati Shivaji International Airport,
+Mumbai,
+Maharashtra</option>
+<option value="Netaji Subhash Chandra Bose International Airport
+Kolkata,
+West Bengal">Netaji Subhash Chandra Bose International Airport,
+Kolkata,
+West Bengal</option>
+<option value="Dubai International Airport	Garhoud, Dubai">Dubai International Airport	Garhoud, Dubai</option>
+<option value="John F. Kennedy International Airport Queens, New York City, New York">John F. Kennedy International Airport	Queens, New York City, New York</option>
+<option value=" London Heathrow Airport	Hillingdon, London"> London Heathrow Airport Hillingdon, London</option>
+
+</select></td>
+</tr>
+<tr>
+	<td>Depart:</td>
+	<td>
+	<input id="date" type="date" name="date" min="2014-12-31"></td>
+
+</tr>
+
+<tr>
+	<td>Return:</td>
+	<td>
+	<input id="date" type="date" name="date" min="2014-12-31"></td>
+
+</tr>
+
+
+<tr>
+	<td>Travellers:</td>
+<tr>	
+    <td>Adults:</td>
+	<td><select number="">
+		<option value="-1" selected>select..</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select></td>
+</tr>	
+
+<tr>
+    <td>Children:</td>
+	<td><select number="(age b/w 2-12years)">
+		<option value="-1" selected>...</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select></td>
+</tr>
+<tr>	
+	<td>Infants:</td>
+	<td><select number="(age below 2 years)">
+		<option value="-1" selected>...</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select></td>
+</tr>	
+		
+</tr>
+
+ <tr>
+	<td>Cabin:</td>
+	<td><select name="Cabin">
+		<option value="-1" selected>select..</option>
+		<option value="Economy">Economy</option>
+		<option value="Executive">Executive</option>
+		<option value="First">First</option>
+		<option value="Executive/Economy">Executive/Economy</option>
+		<option value="First/Executive">First/Executive</option>
+	</select></td>
+  </tr>
+
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="3"><input type="submit" value="Submit Form" onClick="conf()"/></td>
+</tr>
+
+</table>
+</form>
+
+   <script type="text/javascript">
+   
+   
+   function conf()
+   { 
+	confirm("Confirmed!!");
+   }
+
+</script>
+</body>
+</html>
