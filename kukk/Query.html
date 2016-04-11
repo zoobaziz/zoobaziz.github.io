@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+</head>
+
+<body>
+
+<div id="navbar">
+	<ul>
+	<li><a href="Index.html">Home</a></li>
+	</ul>
+<div>
+<div id="box2"> 
+	
+	<FORM onsubmit="" ACTION="" method="post">
+	<BODY bgcolor="lightblue">
+	<center>
+	<table>
+	<tr>
+		<td colspan="2"><h1>QUERY FORM</h1></td>
+	</tr>
+	<tr style="font-size:18px;">
+		<td>Name</td>
+		<td colspan="1"><input type="text" align="center" name="txtname" id="txt1" required="1" width="285px" ></td>
+	</tr>
+	<tr style="font-size:18px;">
+		<td>Gender</td>
+		<td style="font-size:12px;">Female<input type="radio"  name="gender" name="RadioFemale">
+		Male<input type="radio" name="gender" name="RadioMale"></td>
+	</tr>
+	<tr>
+	<tr style="font-size:17px;">
+		<td>Date Of Birth</td>
+		<td colspan="1"><input type="text"name="txtday"size="1px">/
+		<input type="text"name="txtday"size="1px">/
+		<input type="text"name="txtday"size="2px">
+	</tr>
+	<tr style="font-size:18px;"><td>Address</td>
+	<td colspan="1"><textarea width="500px" placeholder="Enter your address here" ></textarea></td></tr>
+	<tr style="font-size:18px;">
+		<td>State</td>
+		<td><select name="stateddl">
+				<option name="AP">Andhra Pradesh</option>
+				<option name="ass">Assam</option>
+				<option name="har">Haryana</option>
+				<option name="kar">Karnataka</option>
+				<option name="Maha">Maharastra</option>
+				<option name="Goa">Goa</option>
+				<option name="TN">Tamilnadu</option>
+				<option name="None" selected >Select a state</option>
+		</td>
+		</tr>
+		<tr style="font-size:18px;">
+		<td>Nationality</td>
+		<td><colspan"1"><input type="text" name="txtNationality"required="1"></td>
+	</tr>
+	<tr style="font-size:18px;"><td>Query</td>
+	<td colspan="1"><textarea placeholder="Enter your query here"></textarea></td></tr>
+	<tr align="center">
+		<td colspan="2" ><input type="submit" style="font-size:13px;"
+		name="btnRegister" value="Submit" onclick="display()"></td>
+	</tr>
+	</TABLE>
+	</center>
+	</FORM>
+	</div>
+	<div id="box1">
+
+	</div>
+</body>
+<script type="text/javascript">
+function display()
+{
+	var name=document.getElementById("txt1").value;
+	alert("Thank you,"+name+".We will answer your query as soon as possible.Keep Reading!");
+	
+}
+</script>
+
+</html>
